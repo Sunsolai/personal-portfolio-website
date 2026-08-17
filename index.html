@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#667eea">
+  <meta name="description" content="个人作品集网站 - 展示项目与技能">
+  <title>我的作品集</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#" class="logo">Portfolio</a>
+      <button class="nav-toggle" id="navToggle" aria-label="切换导航菜单" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#about">关于</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>你好，我是 <span class="highlight">开发者</span></h1>
+        <p class="hero-subtitle">专注于构建简洁、美观的 Web 体验</p>
+        <a href="#projects" class="btn btn-primary">查看作品</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>关于我</h2>
+        <p>这里可以介绍你的背景、技能与兴趣方向。</p>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>项目展示</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/project-1.svg" alt="项目一预览图">
+            </div>
+            <h3>项目一</h3>
+            <p>项目简短描述，说明使用的技术与成果。</p>
+          </article>
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/project-2.svg" alt="项目二预览图">
+            </div>
+            <h3>项目二</h3>
+            <p>项目简短描述，说明使用的技术与成果。</p>
+          </article>
+          <article class="project-card">
+            <div class="project-image">
+              <img src="images/project-3.svg" alt="项目三预览图">
+            </div>
+            <h3>项目三</h3>
+            <p>项目简短描述，说明使用的技术与成果。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>联系我</h2>
+        <form class="contact-form" id="contactForm">
+          <label for="name">姓名</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="message">留言</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="btn btn-primary">发送消息</button>
+        </form>
+        <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="currentYear"></span> 我的作品集. 保留所有权利.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

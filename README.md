@@ -2,6 +2,16 @@
 
 一个简洁、响应式的个人作品集网站模板，用于展示项目、技能与联系方式。
 
+## 效果展示
+
+### 首页与关于
+
+![首页与关于区域](images/screenshot-hero.png)
+
+### 项目展示与联系
+
+![项目展示与联系表单](images/screenshot-projects.png)
+
 ## 项目结构
 
 ```
@@ -10,7 +20,9 @@
 ├── styles.css          # 样式文件
 ├── main.js             # 交互脚本
 ├── images/             # 图片资源目录
-│   └── project-placeholder.svg
+│   ├── project-placeholder.svg
+│   ├── screenshot-hero.png
+│   └── screenshot-projects.png
 └── README.md           # 项目说明
 ```
 
